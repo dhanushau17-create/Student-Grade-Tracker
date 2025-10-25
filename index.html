@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎓 Student Grade Tracker</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Add Student</h2>
+      <input type="text" id="name" placeholder="Enter student name">
+      <input type="number" id="grade" placeholder="Enter grade (0–100)">
+      <button onclick="addStudent()">Add</button>
+    </section>
+
+    <section class="report-section">
+      <h2>Summary Report</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="stats">
+        <p><strong>Average:</strong> <span id="avg">0</span></p>
+        <p><strong>Highest:</strong> <span id="high">0</span></p>
+        <p><strong>Lowest:</strong> <span id="low">0</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Grade Tracker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
